@@ -33,3 +33,19 @@ The `./backend` directory contains a partially completed Flask server with a pre
 The `./frontend` directory contains a complete Ionic frontend to consume the data from the Flask server. You will only need to update the environment variables found within (./frontend/src/environment/environment.ts) to reflect the Auth0 configuration details set up for the backend app.
 
 [View the README.md within ./frontend for more details.](./frontend/README.md)
+
+## Postman IAM Tests with auth0 authentication
+
+Tests for Manager role which has the following permissions:<br>
+    ```1. get:drinks-detail```<br>
+    ```2. post:drinks```<br>
+    ```3. patch:drinks```<br>
+    ```4. delete:drinks```<br><br>
+<img src="resources/manager.png"><br><br>
+
+Tests for Barista role which has the following permissions:<br>
+    ```
+    1. get:drinks-detail
+    ```<br><br>
+<img src="resources/manager.png"><br>
+
